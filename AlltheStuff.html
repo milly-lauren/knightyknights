@@ -1,0 +1,473 @@
+ <!-- This is the Login View! -->
+ 
+<html>
+<head>
+<title>LoginView </title>
+    <link rel = "stylesheet" type ="text/css" href="styles.css">
+<body>
+    <div class ="welcomebox">
+    
+        <h1>Sign In</h1>
+        <form>
+            <p>Email</p>
+            <input type="text" name="" placeholder="Email">
+            <p>Password</p>
+            <input type="password" name="" placeholder="Passowrd">
+            <input type="submit" name="" value="Login">
+            <a href="SignUpView.html"></a><button>Sign Up</button>
+        </form>
+        
+    </div>
+    <div class ="textbox">
+        <h2>Welcome to KnightyKnights</h2>
+            <form>
+                <p>The best way to help you remember every knight!</p>
+            </form>
+    </div>
+    
+</body>
+</head>
+</html> 
+
+
+<!-- this is the Signup View --!>
+<html>
+<head>
+<title>LoginView </title>
+    <link rel = "stylesheet" type ="text/css" href="styles2.css">
+<body>
+    <div class ="signupbox">
+    
+        <h1>Sign Up</h1>
+        <form>
+            <p>Name</p>
+            <input type="text" name="" placeholder="Name">
+            <p>Password</p>
+            <input type="password" name="" placeholder="Password">
+            <p>Email</p>
+            <input type="text" name="" placeholder="Email">
+            <p>Phone</p>
+            <input type="text" name="" placeholder="Phone">
+            <input type="submit" name="" value="Submit">
+        </form>
+    </div>
+    <div class = "welcome">
+        <h2> Welcome to the Kingdom.</h2>
+    </div>
+    
+</body>
+</head>
+</html> 
+
+<!-- This is the view the User sees when logged in --!>
+<html>
+<head>
+<title>UserView </title>
+    <link rel = "stylesheet" type ="text/css" href="styles3.css">
+<body>
+    <div class="searchbox">
+        
+        <h1>Search Contact</h1>
+        <form>
+            <p>Name</p>
+            <input type="text" name="" placeholder="Name">
+            <input type="submit" name="" placeholder="Search">
+        </form>
+        
+    </div>
+    <div class ="deletebox">
+        <h2>Delete Contact</h2>
+        <form>
+            <p>Name</p>
+            <input type="text" name="" placeholder="Name">
+            <input type="submit" name="" placeholder="Delete">
+        </form>
+    </div>
+    <div class="addbox">
+        <h3>Add new Contact</h3>
+        <form>
+            <p>Name</p>
+            <input type="text" name="" placeholder="Name">
+            <p>Number</p>
+            <input type="text" name="" placeholder="Number">
+            <p>Email</p>
+            <input type="text" name="" placeholder="Email">
+            <input type="submit" name="" placeholder="Add">
+        </form>
+    </div>
+    <div class= "text">
+        <h4>Make a Selection Below</h4>
+    </div>
+</body>
+</head>
+</html> 
+
+
+<!-- Here are the CSS files: --!>
+
+<!-- Login CSS --!>
+body
+{
+    margin: 0;
+    padding: 0;
+    
+    background: url(backk.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    font-family: inherit;
+    
+}
+
+
+.welcomebox
+{
+    width: 320px;
+    height: 250px;
+    background: linear-gradient(black, #414345);
+    color: #fff;
+    top: 50%;
+    left: 70%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-shadow: 6px 13px 8px #444C54;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+
+h1
+{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 28px;
+    
+}
+
+.welcomebox p
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+}
+
+.welcomebox input
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.welcomebox input[type="submit"]
+{
+    width: 35%;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.welcomebox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.welcomebox input[type = "submit"]
+{
+    border: none;
+    outline: none;
+    height: 30px;
+    background: white;
+    color: black;
+    box-shadow:2px 3px 11px #CED5D9;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    
+}
+
+.welcomebox input[type="submit"]:hover
+{
+    animation-fill-mode: forwards;
+    background: #CED5D9;
+}
+
+.welcomebox button
+{
+    border: none;
+    width: 35%;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    outline: none;
+    height: 30px;
+    background: white;
+    color: black;
+    box-shadow:2px 3px 11px #CED5D9;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.welcomebox button:hover
+{
+    background: #CED5D9;
+}
+
+.textbox
+{
+    width: 450px;
+    height: 250px;
+    color: linear-gradient(black, #414345);
+    top: 50%;
+    left: 33%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    padding: 30px 40px;
+}
+
+h2
+{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 58px;
+    text-shadow: 0px 1.5px 0px rgba(255,255,255,.86);
+}
+
+.textbox p
+{
+    margin: 0;
+    padding: 10;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0px 1px 0.5px rgba(255,255,255,.6);
+
+}
+
+
+<!-- Sign Up CSS --!>
+body
+{
+    margin: 0;
+    padding: 0;
+    
+    background: url(backk.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    font-family: inherit;   
+}
+
+h1
+{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+h2
+{
+    margin: 150 10 10px;
+    padding: 0 0 0px;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0px 1.5px 0px rgba(255,255,255,.86);
+}
+
+.signupbox p
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+
+}
+
+
+.signupbox
+{
+    width: 320px;
+    height: 380px;
+    background: linear-gradient(black, #414345);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-shadow: 6px 13px 8px #444C54;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+
+.signupbox input
+{
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+.signupbox input[type="submit"]
+{
+    width: 35%;
+    margin-bottom: 20px;
+    margin-left: 115px;
+}
+
+.signupbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.signupbox input[type = "submit"]
+{
+    border: none;
+    outline: none;
+    height: 30px;
+    background: white;
+    color: black;
+    box-shadow:2px 3px 11px #CED5D9;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    
+}
+
+.signupbox input[type="submit"]:hover
+{
+    animation-fill-mode: forwards;
+    background: #CED5D9;
+}
+
+
+<!-- User View CSS --!>
+body
+{
+    margin: 0;
+    padding: 0;
+    
+    background: url(backk.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    font-family: inherit;   
+}
+
+.searchbox
+{
+    width: 220px;
+    height: 350px;
+    background: linear-gradient(black, #414345);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-shadow: 6px 13px 8px #444C54;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+
+
+.deletebox
+{
+    width: 220px;
+    height: 350px;
+    background: linear-gradient(black, #414345);
+    color: #fff;
+    top: 50%;
+    left: 80%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-shadow: 6px 13px 8px #444C54;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+
+.addbox
+{
+    width: 220px;
+    height: 350px;
+    background: linear-gradient(black, #414345);
+    color: #fff;
+    top: 50%;
+    left: 20%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-shadow: 6px 13px 8px #444C54;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 30px 40px;
+}
+
+h1, h2, h3
+{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 28px;
+    
+}
+input[type="submit"]:hover
+{
+    animation-fill-mode: forwards;
+    background: #CED5D9;
+}
+
+input[type = "submit"]
+{
+    border: none;
+    outline: none;
+    height: 30px;
+    background: white;
+    color: black;
+    box-shadow:2px 3px 11px #CED5D9;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+    
+}
+
+input[type="submit"]
+{
+    width: 35%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 65px;
+}
+
+input[type="text"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    width: 210px;
+    color: #fff;
+    font-size: 12px;
+}
+
+h4
+{
+    margin: 150 10 10px;
+    padding: 0 0 0px;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0px 1.5px 0px rgba(255,255,255,.86);
+}
+
+
